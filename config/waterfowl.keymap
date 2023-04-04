@@ -20,6 +20,8 @@
   tapping-term-ms = <200>;
 };
 
+&out OUT_BLE
+
 /* Combos */
 /* Don't really need any, I think
 / {
