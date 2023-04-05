@@ -46,15 +46,15 @@
  * |---------+------+------+------+------|  ,-----.     ,----.  |------+------+------+------+---------|
  * | Shift,Z |   X  |   V  |   C  |   B  |  |paste|     |copy|  |   N  |   M  |   ,  |   .  | Shift,/ |
  * `-------------------------------------'  `-----'     `----'  `-------------------------------------'
- *         ,------.   ,-------------------------.          ,----------------------------.   ,------. 
- *         | none |   | FN/TAB | L2/SPACE | CMD |          | ALT | L1/BSPC | CTRL/ENTER |   | none |	
- *         `------'   `-------------------------'          `----------------------------'   `------'
+ *         ,------.   ,------------------------.          ,----------------------------.   ,------. 
+ *         | none |   | CMD |  L2/SPACE  | TAB |          | CTRL/ENTER | L1/BSPC | ALT |   | none |	
+ *         `------'   `------------------------'          `----------------------------'   `------'
  */
 			bindings = <
 	&kp Q		      &kp W		&kp E		&kp R		&kp T			                 &kp Y	&kp U		&kp I		  &kp O		  &kp P
 	&kp A	        &kp S	  &kp D	  &kp F	  &kp G			                 &kp H	&kp J	  &kp K	    &kp L	    &kp APOS
 	&mt RSHFT Z		&kp X		&kp V		&kp C		&kp B			                 &kp N	&kp M		&kp COMMA	&kp DOT		&mt LSHFT FSLH
-	&none	    &kp TAB &lt RAISE SPACE	&kp LGUI  &kp RG(V) &kp LG(C)	 &kp RALT	 &lt RAISE BSPC &lt RCTRL RET		&none
+	&none	    &kp LGUI &lt RAISE SPACE	&kp TAB &kp RG(V) &kp LG(C)	 &lt RCTRL RET	 &lt RAISE BSPC &lt RALT	&none
 			>;
 
 			sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp RIGHT LEFT>;

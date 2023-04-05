@@ -14,7 +14,7 @@ Encoders encode arrow keys (up/down, left/right). `^` denotes a transparent key,
  * | Shift,Z |   X  |   V  |   C  |   B  |  |paste|     |copy|  |   N  |   M  |   ,  |   .  | Shift,/ |
  * `-------------------------------------'  `-----'     `----'  `-------------------------------------'
  *         ,------.   ,-------------------------.          ,----------------------------.   ,------. 
- *         | none |   | FN/TAB | L1/SPACE | CMD |          | ALT | L1/BSPC | CTRL/ENTER |   | none |	
+ *         | none |   |  CMD   | L1/SPACE | TAB |          | CTRL/ENTER | L1/BSPC | ALT |   | none |	
  *         `------'   `-------------------------'          `----------------------------'   `------'
  */
 
