@@ -1,11 +1,11 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+    - name: waterfowlzmk
+      url-base: https://github.com/DiegoDoreto
   projects:
-    - name: zmk
-      remote: zmkfirmware
-      revision: main
+    - name: ahlzmk
+      remote: zmk
+      revision: waterfowl-encoders
       import: app/west.yml
   self:
     path: config
