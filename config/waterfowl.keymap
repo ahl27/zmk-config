@@ -44,7 +44,7 @@
  * |---------+------+------+------+------|                      |------+------+------+------+---------|
  * |    A    |   S  |   D  |   F  |   G  |                      |   H  |   J  |   K  |   L  |   '     |
  * |---------+------+------+------+------|  ,-----.     ,----.  |------+------+------+------+---------|
- * | Shift,Z |   X  |   V  |   C  |   B  |  |paste|     |copy|  |   N  |   M  |   ,  |   .  | Shift,/ |
+ * | Shift,Z |   X  |   C  |   V  |   B  |  |paste|     |copy|  |   N  |   M  |   ,  |   .  | Shift,/ |
  * `-------------------------------------'  `-----'     `----'  `-------------------------------------'
  *         ,------.   ,------------------------.          ,----------------------------.   ,------. 
  *         | none |   | CMD |  L2/SPACE  | TAB |          | CTRL/ENTER | L1/BSPC | ALT |   | none |	
@@ -53,7 +53,7 @@
 			bindings = <
 	&kp Q		      &kp W		&kp E		&kp R		&kp T			                 &kp Y	&kp U		&kp I		  &kp O		  &kp P
 	&kp A	        &kp S	  &kp D	  &kp F	  &kp G			                 &kp H	&kp J	  &kp K	    &kp L	    &kp APOS
-	&mt RSHFT Z		&kp X		&kp V		&kp C		&kp B			                 &kp N	&kp M		&kp COMMA	&kp DOT		&mt LSHFT FSLH
+	&mt RSHFT Z		&kp X		&kp C		&kp V		&kp B			                 &kp N	&kp M		&kp COMMA	&kp DOT		&mt LSHFT FSLH
 	&none	    &kp LGUI &lt RAISE SPACE	&kp TAB &kp RG(V) &kp LG(C)	 &lt RCTRL RET	 &lt RAISE BSPC &lt RALT	&none
 			>;
 
@@ -66,9 +66,9 @@
  * ,----------------------------------.                      ,-----------------------------------.
  * |  1  |   2  |   3  |   4   |   5  |                      |   6  |   7  |   8  |   9  |   0   |
  * |-----+------+------+-------+------|                      |------+------+------+------+------ |
- * |  (  | Home |  Up  |  End  |   )  |                      |   -  |   [  |   ]  |   \  |   `   |
+ * |  (  | Left |  Up  | Right |   )  |                      |   -  |   [  |   ]  |   \  |   `   |
  * |-----+------+------+-------+------|  ,-----.    ,-----.  |------+------+------+------+------ |
- * |Shift| Left | Down | Right | Esc  |  |  ^  |    | cut |  |   ;  |   =  |Toggle|      | Shift |
+ * |Shift| Home | Down |  End  | Esc  |  |  ^  |    | cut |  |   ;  |   =  |Toggle|      | Shift |
  * `----------------------------------'  `-----'    `-----'  `-----------------------------------'
  *          ,-----.   ,-------------------.            ,--------------------.   ,-----. 
  *          |  ^  |   |  ^  | SPACE |  ^  |            |  ^  |   BS   |  ^  |   |  ^  |
@@ -76,9 +76,9 @@
  */
 			bindings = <
 	&kp N1		  &kp N2	  &kp N3		&kp N4	  &kp N5					    &kp N6	   &kp N7	    &kp N8		  &kp N9		&kp N0
-	&kp LPAR	  &kp HOME	&kp UP	  &kp END	  &kp RPAR				    &kp MINUS	 &kp LBKT	  &kp RBKT		&kp BSLH	&kp GRAVE
-	&kp LSHFT   &kp LEFT	&kp DOWN	&kp RIGHT	&kp ESC					      &kp SEMI	  	 &kp EQUAL	&to FUNCTION  &none	&kp RSHFT
-	&trans	    &trans	  &kp SPACE	&trans    &trans					    &kp LG(X)	 &trans	    &kp BSPC	      &trans  	&trans
+	&kp LPAR	  &kp LEFT	&kp UP	  &kp RIGHT &kp RPAR				    &kp MINUS	 &kp LBKT	  &kp RBKT		&kp BSLH	&kp GRAVE
+	&kp LSHFT   &kp HOME	&kp DOWN	&kp END  	&kp ESC				      &kp SEMI	 &kp EQUAL	&to FUNCTION  &none 	&kp RSHFT
+	&trans	    &trans	  &kp SPACE	&trans    &trans					    &kp LG(X)	 &trans	    &kp BSPC	  &trans  	&trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp RIGHT LEFT>;
