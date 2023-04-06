@@ -3,7 +3,7 @@ manifest:
     - name: waterfowlzmk
       url-base: https://github.com/DiegoDoreto
   projects:
-    - name: ahlzmk
+    - name: waterfowlzmk
       remote: zmk
       revision: waterfowl-encoders
       import: app/west.yml
